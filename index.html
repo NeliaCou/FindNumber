@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  
+console.log("Hello wilders!")
+
+
+const askUserName = prompt("Salut ! Tu t'appelles comment ?")
+const numberToGuess = Math.floor(Math.random()*100);
+let proposedNumber;
+
+console.log(numberToGuess)
+
+
+do {
+  proposedNumber = parseInt(prompt("Devinez le chiffre entre 1 et 100 :"));
+if(proposedNumber > numberToGuess) {
+   alert("C'est moins");
+}
+
+else if(proposedNumber < numberToGuess) {
+  alert("C'est plus");
+}
+
+else {
+  alert(`Bravo ${askUserName} tu as gagné !`)
+}
+
+} while (numberToGuess !== proposedNumber);
+
+   
+   
+    </script>
+</body>
+</html>
